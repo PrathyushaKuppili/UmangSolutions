@@ -20,7 +20,8 @@ public class Welcomepage extends AppCompatActivity {
         back=findViewById(R.id.back);
         Intent intent=getIntent();
         String data=intent.getStringExtra("username");
-        text.setText("Welcome"+data+"To Umang");
+        String datapwd=intent.getStringExtra("password");
+        text.setText(" Your Username"+data+"Your Password"+datapwd);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
